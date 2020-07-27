@@ -17,5 +17,9 @@ export default url => {
     rws._ws.on('ping', pong)
   })
 
+  rws.addEventListener('close', () => {
+    rws.reconnect()
+  })
+
   return rws
 }
