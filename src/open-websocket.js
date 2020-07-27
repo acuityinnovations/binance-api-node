@@ -18,7 +18,7 @@ export default url => {
   })
 
   rws.addEventListener('close', () => {
-    rws.reconnet()
+    rws.reconnect()
   })
 
   return rws
